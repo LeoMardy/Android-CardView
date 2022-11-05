@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="294dp"
+           android:padding="10dp"
+            android:src="@drawable/mi_pic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay and transfer"
+            android:textSize="21dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingLeft="17dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="3dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4"
+                        android:orientation="horizontal"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+
+                                android:layout_gravity="center"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/sendmoney"
+                                android:backgroundTint="@color/black" />
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Send Money"
+                                android:textStyle="bold"
+                                android:textSize="15sp"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/direct_pay"
+                                android:backgroundTint="@color/black" />
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Direct Pay"
+                                android:paddingLeft="5dp"
+                                android:textStyle="bold"
+                                android:textSize="15sp"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/my_beneficiary"
+                                android:backgroundTint="@color/black" />
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="My Beneficiary"
+                                android:paddingLeft="5dp"
+                                android:textStyle="bold"
+                                android:textSize="15sp"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/pass_book"
+                                android:backgroundTint="@color/black" />
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ePassbook"
+                                android:paddingLeft="5dp"
+                                android:textStyle="bold"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:paddingTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4"
+                        android:orientation="horizontal"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+
+                                android:layout_gravity="center"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/less_card"
+                                android:backgroundTint="@color/black" />
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Card-less Cash"
+                                android:textStyle="bold"
+                                android:textSize="15sp"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/donation"
+                                android:backgroundTint="@color/black" />
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Donation"
+                                android:paddingLeft="5dp"
+                                android:textStyle="bold"
+                                android:textSize="15sp"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/history"
+                                android:backgroundTint="@color/black" />
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="History"
+                                android:paddingLeft="5dp"
+                                android:textStyle="bold"
+                                android:textSize="15sp"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/care"
+                                android:backgroundTint="@color/black" />
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Donate to PM \n       Care"
+                                android:paddingLeft="5dp"
+                                android:textStyle="bold"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPI"
+                android:textSize="21dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:paddingLeft="17dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="240dp"
+                android:backgroundTint="#25603498"
+                android:text="More"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+
+        <include layout="@layout/upi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LifeStyle"
+            android:textSize="21dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingLeft="17dp"/>
+
+        <include layout="@layout/life_style"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loans"
+                android:textSize="21dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:paddingLeft="17dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="220dp"
+                android:backgroundTint="#25603498"
+                android:text="More"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+<include layout="@layout/loans"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other Services"
+                android:textSize="21dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:paddingLeft="17dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="150dp"
+                android:backgroundTint="#25603498"
+                android:text="More"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <include layout="@layout/other_services"/>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
